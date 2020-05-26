@@ -340,9 +340,21 @@ textarea {
   width: 100%;
   -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.16);
           box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.16);
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  cursor: pointer;
 }
 
 .service__more:hover {
+  color: #0c3273;
+}
+
+.service__popup {
+  color: #0c3273;
+}
+
+.service__popup:hover {
   color: #0c3273;
 }
 
@@ -386,6 +398,10 @@ textarea {
 }
 
 .articles-box__descriptionMore {
+  display: none;
+}
+
+.show-articles {
   display: none;
 }
 
@@ -435,4 +451,57 @@ textarea {
   font-size: 13px;
   margin-left: 29px;
   border-bottom: 1px solid #fff;
+}
+
+/*--------Popup-------- */
+
+.hidden {
+  display: none;
+}
+
+.form-popup {
+  margin: 0 auto;
+  max-width: 570px;
+  width: 100%;
+  padding: 67px 74px 69px;
+  background-color: #f8fbff;
+}
+
+.form-popup__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+  max-width: 400px;
+}
+
+.form-popup__description {
+  text-align: center;
+  margin-bottom: 47px;
+  max-width: 400px;
+}
+
+.form-popup__item {
+  max-width: 422px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 3px;
+  border: none;
+  -webkit-box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.09);
+}
+
+.form-popup__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.form-popup__input {
+  padding: 12px 0 14px 31px;
+  border: 1px solid #0c3273;
+}
+
+.form-popup__btn {
+  background-color: #fac407;
+  padding: 12px 0 14px 57px;
+  font-weight: 600;
+  text-align: start;
 }
