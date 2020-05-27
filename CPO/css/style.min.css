@@ -64,7 +64,18 @@
 .header-logo {
 	margin-bottom: 0;
 }
- 
+
+.contact, .header-logo {
+	justify-content: center;
+}
+
+.contact {
+	margin-bottom: 30px;
+}
+
+.service-box {
+	margin-bottom: 15px;
+} 
 
 }
 
