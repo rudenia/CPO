@@ -267,7 +267,7 @@ textarea {
 
 .service {
   background-color: #f8fbff;
-  padding: 68px 0;
+  padding: 68px 0 0;
 }
 
 .service__title {
@@ -528,4 +528,51 @@ textarea {
 
 .mfp-close:active {
   top: -4%;
+}
+
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+
+.container {
+    width: 960px;
+}
+.service-box__btn {
+    padding: 7px 30px 11px;
+}  
+
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+
+.container {
+    width: 720px;
+}
+
+  
+
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+
+.container {
+    width: 520px;
+  } 
+
+ 
+
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+
+.container {
+    width: 90%;
+  } 
+
+
 }
