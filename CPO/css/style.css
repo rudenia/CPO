@@ -366,7 +366,7 @@ textarea {
 
 .articles-box {
   margin-bottom: 50px;
-  padding: 28px 10px 33px;
+  padding: 28px 10px 13px;
   -webkit-box-shadow: 10px 10px 27px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 10px 10px 27px 2px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -391,6 +391,11 @@ textarea {
   font-weight: 600;
   color: #0c3273;
   border-bottom: 1px solid #0c3273;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  transition: all .4s ease-in;
 }
 
 .articles-box__more:hover {
@@ -399,6 +404,10 @@ textarea {
 
 .articles-box__descriptionMore {
   display: none;
+}
+
+.articles-box__more.active + .articles-box__descriptionMore {
+  display: block;
 }
 
 .show-articles {
@@ -460,6 +469,7 @@ textarea {
 }
 
 .form-popup {
+  position: relative;
   margin: 0 auto;
   max-width: 570px;
   width: 100%;
@@ -504,4 +514,18 @@ textarea {
   padding: 12px 0 14px 57px;
   font-weight: 600;
   text-align: start;
+}
+
+.mfp-close {
+  background-color: #0c3273 !important;
+  color: #fff !important;
+  border-radius: 50%;
+  position: absolute;
+  right: -4%;
+  top: -4%;
+  opacity: 1 !important;
+}
+
+.mfp-close:active {
+  top: -4%;
 }

@@ -1,5 +1,5 @@
 $(function () {
-        //E-mail Ajax Send
+    //E-mail Ajax Send
     $("#form__popup").submit(function() { //Change
         var th = $(this);
         $.ajax({
@@ -31,10 +31,36 @@ $(function () {
         } else {
             element.classList.add("show-articles");
         }
-        $(".service__popup").magnificPopup();
     }
+
+   /* document.querySelector('.articles-box__show')//.classList.add('opened')
+    document.querySelectorAll('.articles-box__show').forEach(function (section) {
+        section.addEventListener('click',function (e) {
+            document.querySelectorAll('.articles-box__show').forEach(function (section) {
+                section.querySelector('.articles-box__descriptionMore').style.maxheight = '0px'
+                //.classList.remove('opened')
+            })
+            var InsideElHeight =  e.target.closest('.articles-box__show').querySelector('.articles-box__descriptionMore > *').clientHeight;
+
+            e.target.closest('.articles-box__show').querySelector('.articles-box__descriptionMore').style.maxheight = InsideElHeight + 'px'
+            //.classList.add('opened')
+        })
+    })*/
+
+
+    let acc = document.getElementsByClassName("articles-box__more");
+    let i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function () {
+            this.classList.toggle("active");
+
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+
+
+    
 });
-
-
 
 
