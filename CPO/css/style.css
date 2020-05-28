@@ -208,6 +208,7 @@ textarea {
   padding: 54px 10px;
   top: 50%;
   margin-top: -102px;
+  display: none;
 }
 
 .header-chat__link {
@@ -410,6 +411,12 @@ textarea {
   display: block;
 }
 
+.articles-box__more.active {
+  display: inline-block;
+  color: #c1c0c0;
+  border-bottom: 1px solid #c1c0c0;
+}
+
 .show-articles {
   display: none;
 }
@@ -528,4 +535,272 @@ textarea {
 
 .mfp-close:active {
   top: -4%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+
+  .header-offer__title {
+    font-size: 32px;
+  }
+
+  .service__title {
+    font-size: 27px;
+  }
+
+  .service-box__content {
+    padding: 28px 17px 30px;
+  }
+
+  .service-box__title {
+    font-size: 16px;
+  }
+
+  .service-box__btn {
+    padding: 7px 20px 11px;
+  }
+
+  .articles-box1 {
+    min-height: 284px;
+  }
+
+  .articles-box2 {
+    min-height: 304px;
+  }
+
+  .articles-box3 {
+    min-height: 284px;
+  }
+
+  .articles-box4 {
+    min-height: 307px;
+  }
+
+  .articles-box5 {
+    min-height: 304px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 520px;
+  }
+
+  .header-logo {
+    margin-bottom: 90px;
+  }
+
+  .header-offer__title {
+    margin-bottom: 50px;
+  }
+
+  .contact__number {
+    font-size: 14px;
+  }
+
+  .contact__description {
+    font-size: 11px;
+  }
+
+  .service-box {
+    margin-bottom: 50px;
+    max-width: 490px;
+  }
+
+  .service-box--last {
+    margin-bottom: 0;
+  }
+
+  .service-box__img {
+    max-width: 258px;
+    height: 124px;
+  }
+
+  .service-box__title {
+    margin-bottom: 15px;
+  }
+
+  .service-box__btn {
+    margin: 30px auto 0;
+  }
+
+  .articles-box {
+    padding: 28px 30px 13px;
+  }
+
+  .articles-box1 {
+    min-height: auto;
+  }
+
+  .articles-box2 {
+    min-height: auto;
+  }
+
+  .articles-box3 {
+    min-height: auto;
+  }
+
+  .articles-box4 {
+    min-height: auto;
+  }
+
+  .articles-box5 {
+    min-height: auto;
+  }
+
+  .articles-box__title {
+    margin-bottom: 15px;
+  }
+
+  .articles-box__description {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .articles-box__more {
+    margin-bottom: 15px;
+  }
+
+  .articles-box__descriptionMore {
+    margin-bottom: 0;
+  }
+
+  .footer-contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer-contact__number {
+    font-size: 12px;
+  }
+
+  .footer-contact__description {
+    display: none;
+  }
+
+  .form-popup {
+    max-width: 490px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  .header-logo {
+    margin-bottom: 0;
+  }
+
+  .header-offer__title {
+    font-size: 28px;
+    margin: 20px 0 50px;
+  }
+
+  .header-form__item {
+    padding: 11px;
+    font-size: 12px;
+  }
+
+  .header-form__btn {
+    font-size: 12px;
+    padding: 13px 11px;
+  }
+
+  .contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .contact__number {
+    font-size: 16px;
+  }
+
+  .contact__description {
+    display: none;
+  }
+
+  .service {
+    padding: 35px 0;
+  }
+
+  .service__title {
+    font-size: 23px;
+  }
+
+  .service-box {
+    max-width: 258px;
+  }
+
+  .service-box__content {
+    padding: 20px 14px 30px;
+  }
+
+  .service-box__title {
+    text-align: center;
+  }
+
+  .service-box__description {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .articles {
+    padding: 40px 0;
+  }
+
+  .articles-box {
+    padding: 20px 20px 13px;
+  }
+
+  .articles-box__title {
+    text-align: center;
+  }
+
+  .articles-box__more {
+    font-size: 12px;
+  }
+
+  .footer__description {
+    margin-bottom: 15px;
+  }
+
+  .footer-contact {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .form-popup {
+    max-width: 258px;
+    padding: 45px 15px;
+  }
+
+  .form-popup__title {
+    font-size: 14px;
+  }
+
+  .form-popup__description {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .form-popup__input {
+    padding: 9px 11px;
+    font-size: 12px;
+  }
+
+  .form-popup__btn {
+    padding: 13px 11px;
+  }
 }
